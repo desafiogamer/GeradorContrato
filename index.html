@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML para PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contentTwo">
+        <div class="img">
+            <img src="./img/icone.jpg" alt="Logo" class="logo">
+            <p style="border: none;">
+                <span style="color: #fc1c1c;">EPC TREINAMENTOS E SERVIÇOS</span>
+                <br>
+                <br>
+                <span style="color: #0077ff; font-weight: 200;">
+                    Matriz. Av. Jequitibá, nº274, Bairro Ipê, Macapá
+                    <br>
+                    CNPJ 54.395.195/0001-45
+                </span>
+            </p>
+        </div>
+        <p>Curso: <span id="fichaCurso"></span></p>
+        <p>Nome: <span id="fichaNome"></span></p>
+        <div class="info">
+            <p>Nascimento: <span id="fichaNascimento"></span></p>
+            <p>CPF: <span id="fichaCpf"></span></p>
+            <p>CEP: <span id="fichaCep"></span></p>
+        </div>
+        <div class="local">
+            <p>Endereço: <span id="fichaEndereço"></span></p>
+            <p>N°: <span id="fichaNumeroCasa"></span></p>
+        </div>
+        <div class="locaCidade">
+            <p>Bairro: <span id="fichaBairro"></span></p>
+            <p>Cidade: <span id="fichaCidade"></span></p>
+        </div>
+        <p>E-mail: <span id="fichaEmail"></span></p>
+        <div class="phones">
+            <p>Celular 1: <span id="fichaTelefone"></span></p>
+            <p>Celular 2: <span id="fichaTelefoneFixo"></span></p>
+        </div>
+
+        <p style="text-align: center;">Assinatura do aluno</p>
+
+        <div class="informacoes">
+            <div class="obs">
+                <p style="border: none; font-weight: 400;">
+                    <span>OBS: estamos com uma super
+                    promoção cada curso sai pelo valor de</span> R$
+                    199,99 <span>para as 10 primeiras inscrições.
+                    Até o dia 10.08.</span> inicio das aulas 15.08
+                    <br>
+                    Mais Informações:
+                    <br>
+                    96 99193-1017
+                </p>
+                <p style="border: none; font-weight: 400; color: red;">
+                    Formas de pagamentos
+                    <br>
+                    Pix ou Dinheiro
+                </p>
+                <div class="pagamento">
+                    <img src="./img/pix.png" alt="pix">
+                    <img src="./img/dinheiro.jpeg" alt="dinheiro">
+                </div>
+            </div>
+            <img src="./img/WhatsApp Image 2024-07-20 at 08.21.02.jpeg" alt="Aviso" class="imgInfo">
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="imgs">
+            <img src="./img/icone.jpg" alt="Logo" class="logo">
+        </div>
+        <h1 id="titulo">IDENTIFICAÇÃO DAS PARTES CONTRATANTES</h1>
+        <h2>CONTRATADA:</h2>
+        <p>
+            EPC Treinamentos e Serviços, pessoa jurídica de direito privado, inscrita no CNPJ sob o n.º 54.395.195/0001-45, com
+            endereço na Av. jequitibar 274 - Bairro IPE - Macapá-Ap, e-mail: Epctreinamentos2024@gmail.com, devidamente
+            representada neste ato pelo diretor GENILSON COSTAS DOS SANTOS, brasileiro, solteiro, inscrito no CPF nº 904.248.242-72.
+            <br><br>
+            E, de outro lado:
+        </p>
+        <h2>CONTRATANTE:</h2>
+        <p>
+            O/a aluno/a <span id="pdf-nome">__________</span>, natural de <span id="pdf-cidade">__________</span>, nascido/a aos <span id="pdf-dataNascimento">__________</span>, devidamente
+            cadastrado/a com o RG <span id="pdf-rg">__________</span> e CPF <span id="pdf-cpf">__________</span>, residente e domiciliado(a) à <span id="pdf-rua">__________</span>, <span id="pdf-numeroCasa">__________</span>, <span id="pdf-bairro">__________</span>, Cep:
+            <span id="pdf-cp">__________</span>, possui para contato telefone fixo <span id="pdf-telefoneFixo">__________</span>, celular <span id="pdf-telefone">__________</span> e e-mail <span id="pdf-email">__________</span>, de hoje em diante denominado/a
+            ALUNO(A)/CONTRATANTE.
+            <br><br>
+            As partes acima identificadas têm, entre si, justo e acertado o presente Contrato de Prestação de Serviços Educacionais, consistentes no curso de
+            nível técnico, que se regerá pelas cláusulas seguintes e pelas condições descritas no presente instrumento.
+        </p>
+
+        <h2>
+            DO OBJETO DO CONTRATO <br>
+            Cláusula 1ª - DEFINIÇÕES
+        </h2>
+
+        <p>
+            (a) “Disciplina” significa, neste contexto, a disciplina na qual o aluno está matriculado: indica um conjunto de conhecimentos associados a serem
+            transmitidos ao aluno para o entendimento básico de algum tema ou assunto específico (ou conjunto de temas).
+            <br>
+            (b) Inadimplência significa o não pagamento dos valores pactuados entre a CONTRATADA e o CONTRATANTE, nas datas previstas, em razão dos
+            serviços prestados e definidos neste documento.
+            <br>
+            (c) Os juros de mora são a penalidade aplicada em caso de atraso no cumprimento de obrigação
+            <br>
+            (d) PLATAFORMA DIGITAL DE ESTUDOS da EPC Treinamentos e serviços.
+            <br>
+        </p>
+
+        <h2>Cláusula 2ª – DOS REQUSITOS PARA A MATRÍCULA</h2>
+        <p>2.1 – Para efetivar a matrícula, o estudante deve estar finalizando o Ensino Médio ou já o ter concluído, além de possuir 18 anos completos ou mais</p>
+
+        <h2>Cláusula 3ª - DAS AULAS</h2>
+        <p>
+            3.1 - As aulas serão ministradas EXCLUSIVAMENTE semi presencial, através de plataforma virtual licenciada a instituição de ensino, devidamente
+            indicada do inicio do curso.
+            <br>
+            3.2 – O curso está dividido em diferentes videos aulas e apostila PDF devidamente aprovado pela autoridade
+            educacional competente.
+            <br>
+            3.3 – As aulas não poderão ser baixadas ou reproduzidas por meio distinto do indicado. Elas ficarão disponíveis para acesso pelo período de duração
+            do curso, a contar da efetivação damatrícula.
+        </p>
+
+        <h2>Cláusula 4ª – DAS ATIVIDADES PRÁTICAS</h2>
+        <p>
+            4.1 – A CONTRATADA se obriga a prestar ao aluno os serviços de aulas praticas, com a carga horária 40 Horas de
+            credenciamento/autorização, na modalidade semi presencial, iniciando-se no dia da matrícula, com término previsto para até 23 de agosto 2024 podendo ser redefinida a data.
+        </p>
+
+        <h2>Cláusula 5ª - DA FREQUÊNCIA</h2>
+        <p>
+            5.1 - A fim de que possa receber o certificado ao final do curso, o CONTRATANTE não deverá se ausentar por mais de 25% (vinte e cinco por cento) das
+            aulas.
+            <br>
+            5.2 – O CONTRATANTE, neste ato, declara ter ciência de que a sua frequência é fundamental e obrigatória, sob pena de invalidade de seu certificado,
+            consoante as disposições da EPC Treinamentos e serviços.
+        </p>
+
+        <h2>
+            Cláusula 6ª - DO PAGAMENTO
+        </h2>
+
+        <p>
+            6.1 - Pelos serviços prestados, consistentes no curso de nível técnico, será cobrado o valor de 2.040,00 ( dois mil e quarenta reais) pago através de 12
+            parcelas, vencíveis todo dia 10 (dez).
+            <br>
+            6.2 - Se o pagamento não for realizado até a data de vencimento, o valor será acrescido de juros de mora de 1% (um por cento) ao mês.
+            <br>
+            6.3 - - O CONTRATANTE declara neste ato sua expressa e formal ciência de que, em caso de mora ou inadimplência das parcelas da anuidade ou
+            descumprimento de qualquer obrigação de pagamento decorrente desse contrato, poderá a Instituição inscrever o nome do CONTRATANTE em banco
+            de dados cadastrais de proteção ao crédito (SPC, DPC, Serasa e qualquer outro). Além disso, a Instituição poderá se valer da empresa “Platinum
+            Cobranças de Título e Assessoria Comercial LTDA”, telefone: (61) 3342-3130, especializada na cobrança de tais dividas, respondendo também, neste
+            caso, o CONTRATANTE em mora ou inadimplência pelos honorários devidos.
+            <br>
+            6.4 – O pagamento poderá ser realizado à vista, por meio de dinheiro em espécie, de PIX, de cartão de crédito ou de débito ou por meio de boleto
+            bancário.
+            <br>
+            6.5 – Os boletos serão emitidos pela instituição financeira indicada pela CONTRATADA.
+            <br>
+            6.6 – Uma vez gerado, o boleto ficará disponível na plataforma indicada pela CONTRATADA, não havendo, portanto, possibilidade de extravio ou de
+            qualquer outra alegação dessa natureza que justifique a inadimplência.
+        </p>
+
+        <h2>
+            Cláusula 7ª - DO CUMPRIMENTO DE NORMAS
+        </h2>
+
+        <p>
+            7.1 - O(A) ALUNO(A) se obriga a cumprir:
+            <br>
+            (1) Normas e instruções descritas no Estatuto e no Regimento Geral da CONTRATADA;
+            <br>
+            (2) Normas e instruções descritas nos demais instrumentos dos órgãos da CONTRATADA referentes às obrigações escolares e disciplinares;
+            <br>
+            (3) Critérios legais e regimentais relacionados aos critérios de avaliação do aprendizado
+            <br>
+        </p>
+
+        <h2>
+            Cláusula 8ª - DA RESCISÃO
+        </h2>
+
+        <p>
+            8.1 – O presente contrato pode ser rescindido nas seguintes situações:
+            <br>
+            (I) Pelo CONTRATANTE: (a) em caso de trancamento de matrícula, desde que regularmente solicitado e inexistente qualquer débito pretérito.
+            <br>
+            (II) Pela CONTRATADA: (a) em caso de desligamento do CONTRATANTE, nos termos do regulamento interno daquela; (b) em caso de inadimplência,
+            nos termos da cláusula 6.3.
+            <br>
+            8.2 - A rescisão deve ser comunicada com uma antecedência mínima de 30 (trinta) dias.
+            <br>
+            8.3 - Em caso de rescisão, o CONTRATANTE fica obrigado a saldar o valor do débito (ou dos débitos) eventualmente existente, sob pena de incidência
+            de novos encargos e cobranças de mensalidades.
+            <br>
+            8.4 - No caso de cancelamento de matrícula, será observada a data em que tal cancelamento foi solicitado. Caso a solicitação tenha sido realizada
+            antes do início das aulas, será restituído 20% do valor pago. Caso, entretanto, o cancelamento ocorra após o início das aulas, não haverá restituição
+            de valor algum.
+            <br>
+            8.5 - Caso a matrícula seja trancada ou interrompida no decorrer do curso, não haverá devolução dos valores pagos até a solicitação de
+            interrupção/trancamento da matrícula.
+            <br>
+            8.6 - Em caso de desistência do CONTRATANTE, ou de abandono do curso, os valores pagos não serão restituídos.
+        </p>
+
+        <h2>
+            Cláusula 9ª - DO USO DE IMAGEM E DE VOZ
+        </h2>
+        <p>
+            9.1 - O CONTRATANTE autoriza o uso da sua imagem e voz eventualmente captadas pela CONTRATADA durante as atividades desenvolvidas nas
+            aulas remotas, bem como de sua participação em outras atividades pedagógicas não presenciais, por meio tecnológico, para fins exclusivos de
+            avaliação, aprendizagem, ou outros relacionados à atividades acadêmicas.
+            <br>
+            9.2 - É facultado ao CONTRATANTE o direito de não ser gravado ou filmado, mediante prévia e expressa manifestação.
+            <br>
+            9.3 - As imagens captadas durante o desenvolvimento das aulas e/ou atividades acadêmicas remotas são de exclusiva responsabilidade do
+            CONTRATANTE, inclusive, as imagens que não tenham conteúdo pedagógico e que possam caracterizar crimes digitais.
+        </p>
+
+        <h2>
+            CLÁUSULA 10ª – CESSÃO DE DIREITO DE IMAGEM
+        </h2>
+        <p>
+            10.1 - O(A) CONTRATANTE autoriza a CONTRADADA a divulgar pelos meios acadêmicos ou de publicidade em geral (imprensa, rádio, internet, televisão,
+            livros, revistas, prospectos, etc.): fotos, filmagens individuais ou em grupo, resultados em concursos, competições ou premiações desde que tais meios
+            de divulgação valorizem e dignifiquem o aluno e a instituição. A divulgação não compreenderá qualquer direito de pagamento, indenização,
+            participação ou compensação, a qualquer título
+        </p>
+        <br><br><br><br><br><br><br>
+        <h2>Cláusula 11ª – AUTORIZAÇÃO DE COLETA DE DADOS (LGDP)</h2>
+        <p>
+            11.1 - Na vigência deste contrato, poderão ser coletados, em virtude de necessidades educacionais e de atendimento a políticas públicas, bem como
+            para o aperfeiçoamento dos serviços prestados, dados pessoais e dados pessoais sensíveis do CONTRATANTE, que, neste ato, autoriza
+            expressamente a sua utilização e tratamento pela CONTRATADA, em seu melhor interesse, nos termos do art. 14 da Lei n. 13.709/2018.
+            <br>
+            11.2 - A CONTRATADA poderá subcontratar o serviço de processamento e armazenamento de dados, de forma que o(a) CONTRATANTE tem ciência e
+            autoriza neste ato o acesso e tratamento de dados pessoais por terceiros, prestadores de serviços, cuja contratação tenha por objeto garantir a
+            eficiência dos serviços a serem prestados
+        </p>
+
+        <h2>Cláusula 12ª - DA PROTEÇÃO DA INFORMAÇÃO</h2>
+        <p>
+            12.1 – A CONTRATADA envidará todos os esforços para proteger as informações coletadas, especialmente as que disserem respeito a dados pessoais
+            e a dados sensíveis, seja por meio de procedimentos administrativos internos, seja por meio da adoção das medidas protetivas técnicas necessárias.
+        </p>
+
+        <h2>Cláusula 13ª - DO PRAZO DE VIGÊNCIA DO CONTRATO</h2>
+        <p>13.1 - O presente contrato terá prazo de 12 meses, iniciando-se no dia 15/04/2024.</p>
+
+        <h2>Cláusula 14ª – DA MANIFESTAÇÃO DE CONHECIMENTO</h2>
+        <p>
+            14.1 - Ao assinarem este contrato, o CONTRATANTE manifesta ter conhecimento desta cláusulas e, livremente, as aceita para todos os fins e efeitos. As
+            partes obrigam-se a respeitar e seguir as disposições Legais, Estatuárias, Regimentais e Normativas da instituição.
+        </p>
+
+        <h2>Cláusula 15ª - DO FORO</h2>
+        <p>
+            15.1 - Para dirimir quaisquer controvérsias oriundas do CONTRATO, as partes elegem o foro de Águas Claras - DF.
+            E, por assim acharem justos e contratados, assinam, neste ato, o presente contrato, em 2 (duas) vias, de igual teor e forma, juntamente com as
+            testemunhas, para que produza seus efeitos jurídicos.
+        </p>
+
+        <h2>Macapá/AP</h2>
+
+        <h2 style="text-align: center;"><span id="pdf-nomeTwo">_______________</span></h2>
+        <h2 style="text-align: center;">GENILSON COSTA DOS SANTOS</h2>
+        <p style="text-align: center;">Diretor Geral</p>
+
+        <p>
+            Documento emitido em: <span id="pdfEmissao"></span> 
+            <br>
+            Código de controle: 6e3749b0041
+        </p>
+
+        <img src="./img/frame.png" alt="QRCODE" class="qrcode">
+
+        <br>
+        <br>
+        <p style="text-align: center;">
+            EPC Treinamentos e Serviços 
+            <br>
+            54.395.195/0001-45
+            <br>
+            Av. jequitibar 274 - Bairro IPE - Macapá-AP
+            <br>
+            Epctreinamentos2024@gmail.com
+        </p>
+    </div>
+
+    <div class="inputs" id="inputs">
+        <label for="nome">Nome do Aluno: <input type="text" placeholder="Nome do Aluno" name="nome" id="nome"></label>
+        
+    
+        <label for="cidade">Cidade do Aluno: <input type="text" placeholder="Cidade do Aluno" name="cidade" id="cidade"></label>
+        
+    
+        <label for="dataNascimento">Data de Nascimento do aluno: <input type="text" placeholder="Data de Nascimento" name="dataNascimento" id="dataNascimento"></label>
+        
+    
+        <label for="rg">RG do aluno: <input type="text" placeholder="RG do Aluno" name="rg" id="rg"></label>
+        
+    
+        <label for="cpf">CPF do aluno: <input type="text" placeholder="CPF do Aluno" name="cpf" id="cpf"></label>
+        
+    
+        <label for="telefoneFixo">Telefone Fixo do Aluno: <input type="text" placeholder="Telefone Fixo do Aluno" name="telefoneFixo" id="telefoneFixo"></label>
+        
+    
+        <label for="telefone">Celular do Aluno: <input type="text" placeholder="Celular do Aluno" name="telefone" id="telefone"></label>
+        
+    
+        <label for="cp">CEP: <input type="text" placeholder="Cep do Aluno" name="cp" id="cp"></label>
+        
+    
+        <label for="rua">Rua: <input type="text" placeholder="Rua do Aluno" name="rua" id="rua"></label>
+        
+    
+        <label for="bairro">Bairro: <input type="text" placeholder="Bairro do Aluno" name="bairro" id="bairro"></label>
+        
+    
+        <label for="numeroCasa">Numero da Casa: <input type="text" placeholder="Numero da Casa do Aluno" name="numeroCasa" id="numeroCasa"></label>
+        
+    
+        <label for="email">Email do Aluno: <input type="email" placeholder="Email do Aluno" name="email" id="email"></label>
+        
+
+        <label for="emissao">Data de Emissão: <input type="text" placeholder="Data de Emissão" name="emissao" id="emissao"></label>
+        
+
+        <label for="curso">Curso: <input type="text" placeholder="Curso para a Ficha" id="curso" name="curso"></label>
+        
+
+        <button id="downloadPdf">Baixar CONTRATO</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

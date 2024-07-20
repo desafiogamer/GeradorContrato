@@ -1,0 +1,223 @@
+*{
+    overflow-x: hidden;
+}
+
+body{
+    padding-top: 70px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #222222;
+    z-index: 99;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+
+header nav a:hover{
+    color: #00df00;
+}
+
+.btnMenu{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+}
+
+#content{
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#content h1{
+    font-size: 17px;
+}
+
+#content h2{
+    font-size: 14px;
+}
+
+#content p{
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.inputs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: #464646;
+    color: white;
+    display: grid;
+    padding: 10px 10px 100px 10px;
+    overflow: hidden;
+}
+
+.inputs input{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.inputs button{
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.imgs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img{
+    width: 100px;
+    height: 100px;
+}
+
+.qrcode{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 140px;
+}
+
+#contentTwo{
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    border: 2px solid #008cff;
+}
+
+.img{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #008cff;
+    padding: 10px;
+}
+
+.img img{
+    width: 150px;
+}
+
+.img p{
+    text-align: center;
+    width: 80%;
+    font-size: 27px;
+}
+
+#contentTwo p{
+    border: 1px solid #008cff;
+    padding: 15px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+
+}
+
+.info p{
+    width: 100%;
+}
+
+.local{
+    width: 100%;
+    display: flex;
+}
+
+.local p:first-child{
+    width: 80%;
+}
+
+.local p:last-child{
+    width: 20%;
+}
+
+.locaCidade{
+    display: flex;
+    width: 100%;
+}
+
+.locaCidade p{
+    width: 100%;
+}
+
+.phones{
+    width: 100%;
+    display: flex;
+}
+
+.phones p{
+    width: 100%;
+}
+
+.informacoes{
+    display: flex;
+}
+
+.imgInfo{
+    width: 100%;
+}
+
+.obs{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23px;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.obs span{
+    color: red;
+}
+
+.pagamento{
+    display: flex;
+}
+
+.pagamento img{
+    width: 70px;
+    margin-right: 20px;
+}
+
+@media(max-width: 785px) {
+    #content{   
+        width: 100%;
+    } 
+}
