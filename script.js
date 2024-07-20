@@ -47,8 +47,8 @@ document.getElementById('downloadPdf').addEventListener('click', function () {
     //contrato
     var element = document.getElementById('content');
     html2pdf().from(element).set({
-        html2canvas: { scale: 2 }, // Aumentar a escala para melhorar a qualidade
-        image: { type: 'png', quality: 1 } // Garantir alta qualidade da imagem
+        html2canvas: { scale: 1 }, // Aumentar a escala para melhorar a qualidade
+        image: { type: 'png' } // Garantir alta qualidade da imagem
     }).toPdf().get('pdf').then(function (pdf) {
         pdf.save('Contrato.pdf');
     });
@@ -57,8 +57,8 @@ document.getElementById('downloadPdf').addEventListener('click', function () {
     //ficha
     var element = document.getElementById('contentTwo');
     html2pdf().from(element).set({
-        html2canvas: { scale: 2 }, // Aumentar a escala para melhorar a qualidade
-        image: { type: 'png', quality: 1 } // Garantir alta qualidade da imagem
+        html2canvas: { scale: 1 }, 
+        image: { type: 'png' } // Garantir alta qualidade da imagem
     }).toPdf().get('pdf').then(function (pdf) {
         pdf.save('Ficha.pdf');
         var inputs = document.querySelectorAll('.inputs input');
