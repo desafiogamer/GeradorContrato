@@ -44,26 +44,36 @@ document.getElementById('downloadPdf').addEventListener('click', function () {
     document.getElementById('fichaTelefone').textContent = telefone;
     document.getElementById('fichaTelefoneFixo').textContent = telefoneFixo;
 
-    //contrato
-    var element = document.getElementById('content');
+    var contentDiv = document.getElementById('content');
+    var contentTwoDiv = document.getElementById('contentTwo');
+    contentDiv.classList.remove('hidden');
+    contentTwoDiv.classList.remove('hidden');
+
+    // Gerar e baixar o PDF - Contrato
+    var element = contentDiv;
     html2pdf().from(element).set({
         html2canvas: { scale: 1 }, // Aumentar a escala para melhorar a qualidade
         image: { type: 'png' } // Garantir alta qualidade da imagem
     }).toPdf().get('pdf').then(function (pdf) {
         pdf.save('Contrato.pdf');
-    });
 
+        // Gerar e baixar o PDF - Ficha
+        var elementTwo = contentTwoDiv;
+        html2pdf().from(elementTwo).set({
+            html2canvas: { scale: 1 },
+            image: { type: 'png' } // Garantir alta qualidade da imagem
+        }).toPdf().get('pdf').then(function (pdf) {
+            pdf.save('Ficha.pdf');
 
-    //ficha
-    var element = document.getElementById('contentTwo');
-    html2pdf().from(element).set({
-        html2canvas: { scale: 1 }, 
-        image: { type: 'png' } // Garantir alta qualidade da imagem
-    }).toPdf().get('pdf').then(function (pdf) {
-        pdf.save('Ficha.pdf');
-        var inputs = document.querySelectorAll('.inputs input');
-        inputs.forEach(function(input) {
-            input.value = '';
+            // Limpar os campos de entrada após gerar o PDF
+            var inputs = document.querySelectorAll('.inputs input');
+            inputs.forEach(function(input) {
+                input.value = '';
+            });
+
+            // Tornar as divs invisíveis novamente
+            contentDiv.classList.add('hidden');
+            contentTwoDiv.classList.add('hidden');
         });
     });
 });
