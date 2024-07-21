@@ -154,18 +154,19 @@ header nav a:hover{
 }
 
 .img img{
-    width: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .img p{
     text-align: center;
     width: 80%;
-    font-size: 27px;
+    font-size: 20px;
 }
 
 #contentTwo p{
     border: 1px solid #008cff;
-    padding: 15px;
+    padding: 10px;
     margin: 0;
     font-weight: bolder;
 }
@@ -215,7 +216,8 @@ header nav a:hover{
 }
 
 .imgInfo{
-    width: 300px;
+    width: 200px;
+    height: 300px;
 }
 
 .obs{
@@ -223,9 +225,8 @@ header nav a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 23px;
-    line-height: 1.4;
-    padding: 20px;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .obs span{
