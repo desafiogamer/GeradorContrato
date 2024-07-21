@@ -84,7 +84,7 @@ document.getElementById('downloadContrato').addEventListener('click', function (
     var opt = {
         margin: 0.5,
         filename: 'Contrato.pdf',
-        image: { type: 'jpeg', quality: 0.75 }, // Reduzir a qualidade da imagem
+        image: { type: 'jpeg', quality: 0.50 }, // Reduzir a qualidade da imagem
         html2canvas: { scale: 1 }, // Reduzir a escala
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
     };
