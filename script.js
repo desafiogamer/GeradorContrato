@@ -34,11 +34,9 @@ document.getElementById('downloadFicha').addEventListener('click', function () {
     contentTwoDiv.classList.remove('hidden');
 
     var opt = {
-        margin: 0.5,
         filename: 'Ficha.pdf',
         image: { type: 'jpeg', quality: 0.75 }, // Reduzir a qualidade da imagem
         html2canvas: { scale: 1 }, // Reduzir a escala
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
     };
 
     html2pdf().from(contentTwoDiv).set(opt).save().then(() => {
@@ -82,11 +80,9 @@ document.getElementById('downloadContrato').addEventListener('click', function (
     contentDiv.classList.remove('hidden');
 
     var opt = {
-        margin: 0.5,
         filename: 'Contrato.pdf',
         image: { type: 'jpeg', quality: 0.50 }, // Reduzir a qualidade da imagem
         html2canvas: { scale: 1 }, // Reduzir a escala
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
     };
 
     html2pdf().from(contentDiv).set(opt).save().then(() => {
