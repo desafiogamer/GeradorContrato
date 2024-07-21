@@ -43,6 +43,7 @@ document.getElementById('downloadPdf').addEventListener('click', function () {
     document.getElementById('fichaEmail').textContent = email;
     document.getElementById('fichaTelefone').textContent = telefone;
     document.getElementById('fichaTelefoneFixo').textContent = telefoneFixo;
+    document.getElementById('fichaNomeTwo').textContent = nome
 
     var contentDiv = document.getElementById('content');
     var contentTwoDiv = document.getElementById('contentTwo');
