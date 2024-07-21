@@ -32,8 +32,16 @@ document.getElementById('downloadFicha').addEventListener('click', function () {
 
     var contentTwoDiv = document.getElementById('contentTwo');
     contentTwoDiv.classList.remove('hidden');
-    
-    html2pdf().from(contentTwoDiv).save('Ficha.pdf').then(() => {
+
+    var opt = {
+        margin: 0.5,
+        filename: 'Ficha.pdf',
+        image: { type: 'jpeg', quality: 0.75 }, // Reduzir a qualidade da imagem
+        html2canvas: { scale: 1 }, // Reduzir a escala
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+
+    html2pdf().from(contentTwoDiv).set(opt).save().then(() => {
         contentTwoDiv.classList.add('hidden');
     });
 });
@@ -72,8 +80,16 @@ document.getElementById('downloadContrato').addEventListener('click', function (
 
     var contentDiv = document.getElementById('content');
     contentDiv.classList.remove('hidden');
-    
-    html2pdf().from(contentDiv).save('Contrato.pdf').then(() => {
+
+    var opt = {
+        margin: 0.5,
+        filename: 'Contrato.pdf',
+        image: { type: 'jpeg', quality: 0.75 }, // Reduzir a qualidade da imagem
+        html2canvas: { scale: 1 }, // Reduzir a escala
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+
+    html2pdf().from(contentDiv).set(opt).save().then(() => {
         contentDiv.classList.add('hidden');
     });
 });
